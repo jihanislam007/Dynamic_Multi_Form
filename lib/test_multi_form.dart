@@ -2,12 +2,12 @@ import 'package:dynamic_multi_form/form.dart';
 import 'package:dynamic_multi_form/user.dart';
 import 'package:flutter/material.dart';
 
-class MultiForm extends StatefulWidget {
+class TestMultiForm extends StatefulWidget {
   @override
   _MultiFormState createState() => _MultiFormState();
 }
 
-class _MultiFormState extends State<MultiForm> {
+class _MultiFormState extends State<TestMultiForm> {
   List<User> users = [];
   @override
   Widget build(BuildContext context) {
@@ -25,11 +25,10 @@ class _MultiFormState extends State<MultiForm> {
         ),*/
         body:  Wrap(
           children: [
-            new Expanded(
+            new IntrinsicHeight(
               //flex: 1,
               child: new Container(
-               height: MediaQuery.of(context).size.width,
-                //height: double.infinity,
+                //height: MediaQuery.of(context).size.height,
                 margin: EdgeInsets.all(16),
                 /*decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
@@ -77,6 +76,7 @@ class _MultiFormState extends State<MultiForm> {
         ),
 
         /*Row(
+
         ),*/
 
         floatingActionButton: FloatingActionButton(

@@ -1,5 +1,6 @@
 import 'package:dynamic_multi_form/form.dart';
 import 'package:dynamic_multi_form/multi_form.dart';
+import 'package:dynamic_multi_form/test_multi_form.dart';
 import 'package:dynamic_multi_form/user.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,9 @@ class MyApp extends StatelessWidget {
         children: [
           Flexible(
             //flex: 1,
-            child: MultiForm(),)
+            child: MultiForm(),
+            //TestMultiForm()
+          )
           //UserForm(user: User(), onDelete: () {  }, onAddForm: () {  }, ),
 
         ],
